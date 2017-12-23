@@ -1,0 +1,9 @@
+# Created by .ignore support plugin (hsz.mobi)
+deploy
+.idea/
+.mvn/
+target/
+api/src/test
+tsung.xml
+*.iml
+test
