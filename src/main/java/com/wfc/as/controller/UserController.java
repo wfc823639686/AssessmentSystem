@@ -1,6 +1,7 @@
 package com.wfc.as.controller;
 
-import com.wfc.as.mapper.UserMapper;
+import com.wfc.as.model.User;
+import com.wfc.as.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,11 +12,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class UserController {
 
     @Autowired
-    private UserMapper userMapper;
+    private UserService userService;
 
     @ResponseBody
     @RequestMapping("getById")
-    public Object getById(Integer id) {
-        return userMapper.getById(id);
+    public Object login(User user) {
+        return userService.login(user);
     }
 }

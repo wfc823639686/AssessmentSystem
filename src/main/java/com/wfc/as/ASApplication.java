@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AssessmentSystemApplication {
+public class ASApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AssessmentSystemApplication.class, args);
+		SpringApplication.run(ASApplication.class, args);
 	}
 }
